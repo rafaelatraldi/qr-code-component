@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+  /*  grid: 1fr min-content / 1fr; */
+    background-color: hsl(212, 45%, 89%);
+    row-gap: 7.5rem;
+    place-items: center;
+    padding: 8.5rem 2.8rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.card{
+    max-width: 32rem;
+    width: 100%;
+    height: auto;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius:  2rem;
+    padding: 1.6rem 1.6rem 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.4rem;
+    box-shadow:  0px 25px 25px rgba(0, 0, 0, 0.476518);
+    
+}
+
+.card__img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.card__text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.6rem;
+    text-align: center;
+    padding-inline: 1.6rem;
+}
+
+.card__heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: #1f314f;
+}
+
+.card_detail {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.019rem;
+    line-height: 1.8rem;
+    color: #7d889e;
+}
+
+.attribution__link-container {
+    color: #626f87;
+}
+
+.attribution__link {
+    color: #404d63;
+    transition: color 250ms ease;
+}
+
+.attribution__link:is(:hover, :focus-within) {
+    color: rgb(183, 13, 152);
+}
